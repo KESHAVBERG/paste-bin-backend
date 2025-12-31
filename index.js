@@ -18,7 +18,7 @@ connectToDb()
 app.use(cors())
 app.use(express.json());
 
-app.get("/api/healthz", (req, res) => {
+app.get("/api/health", (req, res) => {
   res.status(200).json({
     ok: mongoose.connection.readyState === 1
   });
