@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-
+import mongoose from "mongoose";
 import pasteRoutes from "./routes/pasteRouter.js";
 import { errorHandler } from "./middleware/erroHandler.js";
 import { notFound } from "./middleware/notFound.js";
